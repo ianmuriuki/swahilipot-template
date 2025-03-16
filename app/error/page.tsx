@@ -4,8 +4,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Error Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Error Page for Startup Nextjs Template",
+
   // other metadata
+  description: "This is Error Page for Startup Nextjs Template"
 };
 
 const ErrorPage = () => {
@@ -145,8 +146,7 @@ const ErrorPage = () => {
                   Sorry, the page can’t be found
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  The page you were looking for appears to have been moved,
-                  deleted or does not exist.
+                  The page you were looking for is still under construction.Please come back later.
                 </p>
                 <Link
                   href="/"

@@ -5,105 +5,398 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#0077b6] dark:bg-gray-900 text-white pt-12 pb-6"> {/* Ocean blue background */}
-        <div className="container-custom mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <Link href="/" className="flex items-center">
-                <div className="relative h-10 w-40">
+      <footer
+        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
+        data-wow-delay=".1s"
+      >
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+              <div className="mb-12 max-w-[360px] lg:mb-16">
+                <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo-white.png"
-                    alt="SwahiliPot Hub Logo"
-                    width={160}
-                    height={40}
-                    className="brightness-0 invert"
+                    src="/images/logo/logo.png"
+                    alt="logo"
+                    className="w-full dark:hidden"
+                    width={140}
+                    height={30}
                   />
+                  <Image
+                    src="/images/logo/logo.png"
+                    alt="logo"
+                    className="hidden w-full dark:block"
+                    width={140}
+                    height={30}
+                  />
+                </Link>
+                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
+                 SwahiliPot Hub is a collaborative space for technology, arts, and culture in Mombasa, Kenya.
+                </p>
+                <div className="flex items-center">
+                  <a
+                    href="https://facebook.com/swahilipothub"
+                    aria-label="social-link"
+                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                  >
+                    <svg
+                      width="9"
+                      height="18"
+                      viewBox="0 0 9 18"
+                      className="fill-current"
+                    >
+                      <path d="M8.13643 7H6.78036H6.29605V6.43548V4.68548V4.12097H6.78036H7.79741C8.06378 4.12097 8.28172 3.89516 8.28172 3.55645V0.564516C8.28172 0.254032 8.088 0 7.79741 0H6.02968C4.11665 0 2.78479 1.58064 2.78479 3.92339V6.37903V6.94355H2.30048H0.65382C0.314802 6.94355 0 7.25403 0 7.70564V9.7379C0 10.1331 0.266371 10.5 0.65382 10.5H2.25205H2.73636V11.0645V16.7379C2.73636 17.1331 3.00273 17.5 3.39018 17.5H5.66644C5.81174 17.5 5.93281 17.4153 6.02968 17.3024C6.12654 17.1895 6.19919 16.9919 6.19919 16.8226V11.0927V10.5282H6.70771H7.79741C8.11222 10.5282 8.35437 10.3024 8.4028 9.96371V9.93548V9.90726L8.74182 7.95968C8.76604 7.7621 8.74182 7.53629 8.59653 7.31048C8.54809 7.16935 8.33016 7.02823 8.13643 7Z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://twitter.com/swahilipothub"
+                    aria-label="social-link"
+                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                  >
+                    <svg
+                      width="19"
+                      height="14"
+                      viewBox="0 0 19 14"
+                      className="fill-current"
+                    >
+                      <path d="M16.3024 2.26027L17.375 1.0274C17.6855 0.693493 17.7702 0.436644 17.7984 0.308219C16.9516 0.770548 16.1613 0.924658 15.6532 0.924658H15.4556L15.3427 0.821918C14.6653 0.282534 13.8185 0 12.9153 0C10.9395 0 9.3871 1.48973 9.3871 3.21062C9.3871 3.31336 9.3871 3.46747 9.41532 3.57021L9.5 4.0839L8.90726 4.05822C5.29435 3.95548 2.33065 1.13014 1.85081 0.642123C1.06048 1.92637 1.5121 3.15925 1.99194 3.92979L2.95161 5.36815L1.42742 4.5976C1.45565 5.67637 1.90726 6.52397 2.78226 7.14041L3.54435 7.65411L2.78226 7.93665C3.2621 9.24658 4.33468 9.78596 5.125 9.99144L6.16935 10.2483L5.18145 10.8647C3.60081 11.8921 1.625 11.8151 0.75 11.738C2.52823 12.8682 4.64516 13.125 6.1129 13.125C7.21371 13.125 8.03226 13.0223 8.22984 12.9452C16.1331 11.25 16.5 4.82877 16.5 3.54452V3.36473L16.6694 3.26199C17.629 2.44007 18.0242 2.00342 18.25 1.74658C18.1653 1.77226 18.0524 1.82363 17.9395 1.84932L16.3024 2.26027Z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://instagram.com/swahilipothub"
+                    aria-label="social-link"
+                    className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      className="fill-current"
+                    >
+                      <path d="M12 2.163c3.216 0 3.602.012 4.869.07 1.138.055 2.093.225 2.878.51 1.02.314 1.896.746 2.712 1.562.816.816 1.249 1.692 1.562 2.712.285.785.455 1.74.51 2.878.058 1.267.07 1.653.07 4.869s-.012 3.602-.07 4.869c-.055 1.138-.225 2.093-.51 2.878-.314 1.02-.746 1.896-1.562 2.712-.816.816-1.692 1.249-2.712 1.562-.785.285-1.74.455-2.878.51-1.267.058-1.653.07-4.869.07s-3.602-.012-4.869-.07c-1.138-.055-2.093-.225-2.878-.51-1.02-.314-1.896-.746-2.712-1.562-.816-.816-1.249-1.692-1.562-2.712-.285-.785-.455-1.74-.51-2.878-.058-1.267-.07-1.653-.07-4.869s.012-3.602.07-4.869c.055-1.138.225-2.093.51-2.878.314-1.02.746-1.896 1.562-2.712.816-.816 1.692-1.249 2.712-1.562.785-.285 1.74-.455 2.878-.51 1.267-.058 1.653-.07 4.869-.07zm0 1.72c-3.17 0-3.55.013-4.79.07-1.051.051-1.791.227-2.33.466-.633.237-1.17.575-1.67 1.075-.5.5-.838 1.037-1.075 1.67-.239.539-.415 1.279-.466 2.33-.057 1.24-.07 1.62-.07 4.79 0 3.17.013 3.55.07 4.79.051 1.051.227 1.791.466 2.33.237.633.575 1.17 1.075 1.67.5.5 1.037.838 1.67 1.075.539.239 1.279.415 2.33.466 1.24.057 1.62.07 4.79.07 3.17 0 3.55-.013 4.79-.07 1.051-.051 1.791-.227 2.33-.466.633-.237 1.17-.575 1.67-1.075.5-.5.838-1.037 1.075-1.67.239-.539.415-1.279.466-2.33.057-1.24.07-1.62.07-4.79 0-3.17-.013-3.55-.07-4.79-.051-1.051-.227-1.791-.466-2.33-.237-.633-.575-1.17-1.075-1.67-.5-.5-1.037-.838-1.67-1.075-.539-.239-1.279-.415-2.33-.466-1.24-.057-1.62-.07-4.79-.07zm0 3.296a5.362 5.362 0 1 1 0 10.724 5.362 5.362 0 0 1 0-10.724zm0 1.44a3.922 3.922 0 1 0 0 7.843 3.922 3.922 0 0 0 0-7.843zm5.626-2.922a1.244 1.244 0 1 1 0 2.488 1.244 1.244 0 0 1 0-2.488z
+" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/swahilipot-hub"
+                    aria-label="social-link"
+                    className="dark:text-body-color-dark text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                  >
+                    <svg
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      className="fill-current"
+                    >
+                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
+                    </svg>
+                  </a>
                 </div>
-              </Link>
-              <p className="mt-4 hover:text-yellow-400">
-                SwahiliPot Hub is a collaborative space for technology, arts, and culture in Mombasa, Kenya.
-              </p>
-
-              <div className="flex space-x-4 mt-6">
-                <a href="https://twitter.com/swahilipothub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                  </svg>
-                </a>
-                <a href="https://facebook.com/swahilipothub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"></path>
-                  </svg>
-                </a>
-                <a href="https://instagram.com/swahilipothub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd"></path>
-                  </svg>
-                </a>
-                <a href="https://www.linkedin.com/company/swahilipot-hub" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400">
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3.59 3C2.72 3 2 3.72 2 4.59v14.82c0 .87.72 1.59 1.59 1.59h16.83c.87 0 1.59-.72 1.59-1.59V4.59c0-.87-.72-1.59-1.59-1.59H3.59zM7.73 18H4.83V9.5h2.9v8.5zM6.28 8.67c-.94 0-1.7-.77-1.7-1.7s.76-1.7 1.7-1.7c.94 0 1.7.77 1.7 1.7s-.76 1.7-1.7 1.7zM19.17 18h-2.9v-4.9c0-1.17-.42-1.97-1.46-1.97-.79 0-1.26.53-1.47 1.05-.08.19-.1.45-.1.71v4.1h-2.9V9.5h2.9v1.2h.04c.4-.74 1.13-1.2 2.1-1.2 1.61 0 2.88 1.05 2.88 3.32v5.18z"></path>
-                  </svg>
-                </a>
               </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4 hover:text-yellow-400">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/about" className="hover:text-yellow-400">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/programs/events" className="hover:text-yellow-400">Events</Link>
-                </li>
-                <li>
-                  <Link href="/spaces/SpacesLayout" className="hover:text-yellow-400">Spaces</Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-yellow-400">Contact Us</Link>
-                </li>
-              </ul>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Useful Links
+                </h2>
+                <ul>
+                  <li>
+                    <a
+                      href="/blogs"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pricing"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4 hover:text-yellow-400">Programs</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/programs/swahili-tech-women" className="hover:text-yellow-400">Swahili Tech Women</Link>
-                </li>
-                <li>
-                  <Link href="/programs/case-management" className="hover:text-yellow-400">Case Management</Link>
-                </li>
-                <li>
-                  <Link href="/programs/campus_ambassador" className="hover:text-yellow-400">Campus Ambassador</Link>
-                </li>
-              </ul>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Programs
+                </h2>
+                <ul>
+                  <li>
+                    <a
+                      href="/"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Swahili Tech Women
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Case Management
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Campus Ambassador
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4 hover:text-yellow-400">Contact</h3>
-              <address className="not-italic">
-                <p>SwahiliPot Hub Foundation</p>
-                <p>Mombasa, Kenya</p>
-                <p className="mt-2">
-                  <a href="mailto:info@swahilipothub.co.ke" className="hover:text-yellow-400">info@swahilipothub.co.ke</a>
-                </p>
-                <p>
-                  <a href="tel:+254114635505" className="hover:text-yellow-400">+254 11 4635505</a>
-                </p>
-              </address>
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Contact
+                </h2>
+                <ul>
+                  <li>
+                    <a
+                      href="/contact"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                     Swahilipot Hub Foundation Mombasa, Kenya 
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@swahilipothub.co.ke"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                    </a>
+                      info@swahilipothub.co.ke
+                  </li>
+
+                  <li>
+                    <a
+                      href="/tel:+254114635505"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      +254 11 463 5505
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className="border-t border-gray-700 mt-8 pt-6">
-            <p className="text-center text-sm">
-              &copy; {new Date().getFullYear()} SwahiliPot Hub Foundation. Mombasa, Kenya. All rights reserved.
-            </p>
-            <p className="text-center text-sm mt-2">
-              Proudly made by <a href="https://github.com/ianmuriuki" className="hover:text-yellow-400" target="_blank" rel="noopener noreferrer">The Alchemy</a>
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
+          <div className="py-8">
+            <p className="text-center text-base text-body-color dark:text-white">
+              Template by UIdeck and{" "}
+              <a href="https://nextjstemplates.com" rel="nofollow noopener">
+                Next.js Templates
+              </a>
             </p>
           </div>
+        </div>
+        <div className="absolute right-0 top-14 z-[-1]">
+          <svg
+            width="55"
+            height="99"
+            viewBox="0 0 55 99"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
+            <mask
+              id="mask0_94:899"
+              style={{ maskType: "alpha" }}
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="99"
+              height="99"
+            >
+              <circle
+                opacity="0.8"
+                cx="49.5"
+                cy="49.5"
+                r="49.5"
+                fill="#4A6CF7"
+              />
+            </mask>
+            <g mask="url(#mask0_94:899)">
+              <circle
+                opacity="0.8"
+                cx="49.5"
+                cy="49.5"
+                r="49.5"
+                fill="url(#paint0_radial_94:899)"
+              />
+              <g opacity="0.8" filter="url(#filter0_f_94:899)">
+                <circle cx="53.8676" cy="26.2061" r="20.3824" fill="white" />
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_94:899"
+                x="12.4852"
+                y="-15.1763"
+                width="82.7646"
+                height="82.7646"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="10.5"
+                  result="effect1_foregroundBlur_94:899"
+                />
+              </filter>
+              <radialGradient
+                id="paint0_radial_94:899"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(49.5 49.5) rotate(90) scale(53.1397)"
+              >
+                <stop stopOpacity="0.47" />
+                <stop offset="1" stopOpacity="0" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className="absolute bottom-24 left-0 z-[-1]">
+          <svg
+            width="79"
+            height="94"
+            viewBox="0 0 79 94"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              opacity="0.3"
+              x="-41"
+              y="26.9426"
+              width="66.6675"
+              height="66.6675"
+              transform="rotate(-22.9007 -41 26.9426)"
+              fill="url(#paint0_linear_94:889)"
+            />
+            <rect
+              x="-41"
+              y="26.9426"
+              width="66.6675"
+              height="66.6675"
+              transform="rotate(-22.9007 -41 26.9426)"
+              stroke="url(#paint1_linear_94:889)"
+              strokeWidth="0.7"
+            />
+            <path
+              opacity="0.3"
+              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L77.1885 68.2073L50.5215 7.42229Z"
+              fill="url(#paint2_linear_94:889)"
+            />
+            <path
+              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L76.7963 68.2073L50.5215 7.42229Z"
+              stroke="url(#paint3_linear_94:889)"
+              strokeWidth="0.7"
+            />
+            <path
+              opacity="0.3"
+              d="M17.9721 93.3057L-14.9695 88.2076L46.2077 62.325L77.1885 68.2074L17.9721 93.3057Z"
+              fill="url(#paint4_linear_94:889)"
+            />
+            <path
+              d="M17.972 93.3057L-14.1852 88.2076L46.2077 62.325L77.1884 68.2074L17.972 93.3057Z"
+              stroke="url(#paint5_linear_94:889)"
+              strokeWidth="0.7"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_94:889"
+                x1="-41"
+                y1="21.8445"
+                x2="36.9671"
+                y2="59.8878"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_94:889"
+                x1="25.6675"
+                y1="95.9631"
+                x2="-42.9608"
+                y2="20.668"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_94:889"
+                x1="20.325"
+                y1="-3.98039"
+                x2="90.6248"
+                y2="25.1062"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_94:889"
+                x1="18.3642"
+                y1="-1.59742"
+                x2="113.9"
+                y2="80.6826"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+              </linearGradient>
+              <linearGradient
+                id="paint4_linear_94:889"
+                x1="61.1098"
+                y1="62.3249"
+                x2="-8.82468"
+                y2="58.2156"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint5_linear_94:889"
+                x1="65.4236"
+                y1="65.0701"
+                x2="24.0178"
+                y2="41.6598"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </footer>
     </>

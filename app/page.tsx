@@ -12,10 +12,46 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "Swahilipot Hub Foundation",
+  description: "Empowering Innovation in Coastal Regions",
+
+  icons: {
+    icon: "images/logo/logo.png",
+  },
+
+  // Open Graph Meta Tags
+  openGraph: {
+    title: "Swahilipot Hub Foundation",
+    description: "Empowering Innovation in Coastal Regions",
+    url: "https://swahilipothubtemplate.vercel.app", // Your URL
+    images: [
+      {
+        url: "https://swahilipothubtemplate.vercel.app/logo/image.jpg", // Correct image URL
+        alt: "Swahilipot Hun Foundation Logo",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  // Twitter Card Meta Tags
+  // Other metadata can be added below as needed
+  twitter: {
+    card: "summary_large_image",
+    title: "Swahilipot Hun Foundation",
+    description: "Empowering Innovation in Coastal Regions",
+    images: [
+      {
+        url: "https://swahilipothubtemplate.vercel.app/logo/image.jpg", // Correct image URL
+        alt: "Swahilipot Hun Foundation Logo",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  }
 };
+
+
 
 export default function Home() {
   return (
