@@ -2,16 +2,74 @@ import { Menu } from "@/types/menu";
 
 const menuData: Menu[] = [
   {
-    id: 1,
-    title: "Home",
-    path: "/",
-    newTab: false,
-  },
-  {
     id: 2,
     title: "About",
-    path: "/about",
     newTab: false,
+    submenu: [
+      {
+        id: 21,
+        title: "About Us",
+        path: "/about",
+        newTab: false,
+        description: "Learn about our mission, vision, and impact."
+      },
+      {
+        id: 22,
+        title: "Origin",
+        path: "/origin",
+        newTab: false,
+        description: "Discover how swahilipot Hub began."
+      },
+      {
+        id: 23,
+        title: "Board Members",
+        path: "/board-members",
+        newTab: false,
+        description: "Meet our board members."
+      },
+    ],
+  },
+  {
+    id: 100,
+    title: "Departments",
+    newTab: false,
+    submenu: [
+      {
+        id: 101,
+        title: "Technology",
+        path: "/technology",
+        newTab: false,
+        description: "Cutting-edge tech exploration and solutions."
+      },
+      {
+        id: 102,
+        title: "Communication",
+        path: "/communication",
+        newTab: false,
+        description: "Digital communication strategies."
+      },
+      {
+        id: 103,
+        title: "Engineering",
+        path: "/engineering",
+        newTab: false,
+        description: "Softwares and hardware development."
+      },
+      {
+        id: 104,
+        title: "Community",
+        path: "/community",
+        newTab: false,
+        description: "Community engagement and outreach."
+      },
+      {
+        id: 105,
+        title: "Creatives",
+        path: "/creatives",
+        newTab: false,
+        description: "Creaative art and design."
+      },
+    ],
   },
   {
     id: 33,
@@ -80,5 +138,18 @@ const menuData: Menu[] = [
       },
     ],
   },
+  {
+    id: 200,
+    title: "Swahilipotfm",
+    path: "/swahilipotfm",
+    newTab: false,
+  },
+  {
+    id: 201,
+    title: "Join Us",
+    path: "/join-us",
+    newTab: false,
+  },
 ];
+
 export default menuData;
