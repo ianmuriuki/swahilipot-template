@@ -142,13 +142,20 @@ const Header = () => {
                               }`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
-                                >
-                                  {submenuItem.title}
-                                </Link>
+                                <div key={index}>
+                                  <Link
+                                    href={submenuItem.path}
+                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  >
+                                    {submenuItem.title}
+                                  </Link>
+                                  {/* Display description if available */}
+                                  {submenuItem.description && (
+                                    <p className="text-xs text-blue-500 dark:text-blue-500 mt-1">
+                                      {submenuItem.description}
+                                    </p>
+                                  )}
+                                </div>
                               ))}
                             </div>
                           </>
