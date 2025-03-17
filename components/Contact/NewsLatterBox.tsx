@@ -11,33 +11,60 @@ const NewsLatterBox = () => {
       data-wow-delay=".2s"
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Get In Touch
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+        Whether you have a question about our programs, want to partner with us, or are interested in supporting our mission, we're here to help.
       </p>
       <div>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter your name"
-          className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          className="border-stroke dark:text-body-color-dark dark:shadow-two mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
-        />
-        <input
-          type="submit"
-          value="Subscribe"
-          className="shadow-submit dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
-        />
-        <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-body-color">
-          No spam guaranteed, So please don’t send any spam mail.
-        </p>
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="bg-white dark:bg-gray-700 p-3 rounded-full mr-4">
+              <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-1">Visit Us</h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                SwahiliPot Hub
+                <br />
+                Mombasa, Kenya
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="bg-white dark:bg-gray-700 p-3 rounded-full mr-4">
+              <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-1">Email Us</h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                <a href="mailto:info@swahilipothub.co.ke" className="hover:text-primary">
+                  info@swahilipothub.co.ke
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="bg-white dark:bg-gray-700 p-3 rounded-full mr-4">
+              <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-1">Call Us</h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                <a href="tel:+254114635505" className="hover:text-primary">
+                  +254 114 4635505
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div>
@@ -160,91 +187,22 @@ const NewsLatterBox = () => {
             <g opacity="0.3">
               <path
                 opacity="0.45"
-                d="M1 89.9999C8 77.3332 27.7 50.7999 50.5 45.9999C79 39.9999 95 41.9999 106 30.4999C117 18.9999 126 -3.50014 149 -3.50014C172 -3.50014 187 4.99986 200.5 -8.50014C214 -22.0001 210.5 -46.0001 244 -37.5001C270.8 -30.7001 307.167 -45 322 -53"
-                stroke="url(#paint0_linear_1028_603)"
-              />
-              <path
-                opacity="0.45"
-                d="M43 64.9999C50 52.3332 69.7 25.7999 92.5 20.9999C121 14.9999 137 16.9999 148 5.49986C159 -6.00014 168 -28.5001 191 -28.5001C214 -28.5001 229 -20.0001 242.5 -33.5001C256 -47.0001 252.5 -71.0001 286 -62.5001C312.8 -55.7001 349.167 -70 364 -78"
-                stroke="url(#paint1_linear_1028_603)"
-              />
-              <path
-                opacity="0.45"
-                d="M4 73.9999C11 61.3332 30.7 34.7999 53.5 29.9999C82 23.9999 98 25.9999 109 14.4999C120 2.99986 129 -19.5001 152 -19.5001C175 -19.5001 190 -11.0001 203.5 -24.5001C217 -38.0001 213.5 -62.0001 247 -53.5001C273.8 -46.7001 310.167 -61 325 -69"
-                stroke="url(#paint2_linear_1028_603)"
-              />
-              <path
-                opacity="0.45"
-                d="M41 40.9999C48 28.3332 67.7 1.79986 90.5 -3.00014C119 -9.00014 135 -7.00014 146 -18.5001C157 -30.0001 166 -52.5001 189 -52.5001C212 -52.5001 227 -44.0001 240.5 -57.5001C254 -71.0001 250.5 -95.0001 284 -86.5001C310.8 -79.7001 347.167 -94 362 -102"
-                stroke="url(#paint3_linear_1028_603)"
+                d="M1 89.9999C8 77.3332 27.7 50.7999 50.5 45.9999C79 39.9999 95 41.9999 106 30.4999C117 18.9999 126 -3.50014 149 -3.50014C172 -3.50014 187 4.99986 200.5 -8.50014C214 -22.0001 210.5 -46.0001 244 -37.5001C270.8 -30.0001 252.5 15.4999 240 32.0001C227.5 48.5001 233 84 218.5 89C200.5 97 156.5 85.9999 129 77C101 68 80 59 63 43C49 29 37.5 11.5 35 1"
+                fill="url(#paint0_linear_1028_603)"
               />
             </g>
             <defs>
               <linearGradient
                 id="paint0_linear_1028_603"
-                x1="291.35"
-                y1="12.1032"
-                x2="179.211"
-                y2="237.617"
+                x1="-4.07113"
+                y1="5.51033"
+                x2="5.84319"
+                y2="17.3745"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  offset="0.328125"
                   stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
-                <stop
-                  offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0"
-                />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_1028_603"
-                x1="333.35"
-                y1="-12.8968"
-                x2="221.211"
-                y2="212.617"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
-                <stop
-                  offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0"
-                />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_1028_603"
-                x1="294.35"
-                y1="-3.89678"
-                x2="182.211"
-                y2="221.617"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
-                <stop
-                  offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0"
-                />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_1028_603"
-                x1="331.35"
-                y1="-36.8968"
-                x2="219.211"
-                y2="188.617"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopOpacity="0.62"
                 />
                 <stop
                   offset="1"

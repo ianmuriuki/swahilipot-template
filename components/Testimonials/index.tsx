@@ -5,29 +5,29 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Chris Achinga",
+    designation: "Software Developer",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "SwahiliPot Hub has been instrumental in m tech journey.The mentorship and resources provided helped me launch m startup.",
+    image: "/images/testimonials/mtu1.jpeg",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Jones Iann",
+    designation: "Digital Artist",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "The creative community at SwahiliPot Hub gave me the confidence to pursue my passion for digital art.I've found my tribe here.",
+    image: "/images/testimonials/mtu2.jpeg",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Sanaipei Lenapunya",
+    designation: "Software Developer",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "As a young woman in tech, the support I've recieved from, SwahiliPot Hub has been invaluable.Their programs are truly transfformative.",
+    image: "/images/testimonials/mtu...jpeg",
     star: 5,
   },
 ];
@@ -37,8 +37,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="What Our Community Says"
+          paragraph="Hear from the individuals whose lives has been impacted by SwahiliPot Hub."
           center
         />
 
