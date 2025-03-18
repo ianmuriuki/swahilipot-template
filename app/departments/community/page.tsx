@@ -1,7 +1,7 @@
 import React from 'react';
 import PageAbout from '@/components/community/PageAbout';
 import Stats from '@/components/community/Stats';
-import Roles from '@/components/community/Responsibilities';
+import Responsibilities from '@/components/community/Responsibilities';
 import Team from '@/components/community/Team';
 
 export default function CommunityDepartment() {
@@ -26,8 +26,7 @@ export default function CommunityDepartment() {
       { label: "Outreach & Impact", value: "100,000+" }
     ];
 
-  
-    const roles = [
+    const responsibilities = [
         {
           title: "Community Manager",
           description: "Welcome to the Community Department at Swahilipot Hub! Our mission is to foster a strong, inclusive, and engaging environment where every member feels valued and empowered. We strive to connect individuals, nurture talents, and create opportunities for collaboration, growth, and shared success.",
@@ -40,7 +39,7 @@ export default function CommunityDepartment() {
         },
         {
           title: "Social Media Coordinator",
-          description: "At Swahilipot Hub, our community extends beyond physical spaces—it thrives in meaningful interactions, both online and offline. As part of the Community Department, your role will be to amplify our members' voices, highlight their achievements, and cultivate a digital presence that reflects our vibrant and dynamic hub.",
+          description: "At Swahilipot Hub, our community extends beyond physical spaces—it thrives in meaningful interactions, both online and offline. As part of the Community Department, your responsibility will be to amplify our members' voices, highlight their achievements, and cultivate a digital presence that reflects our vibrant and dynamic hub.",
           responsibilities: [
             "Manage and grow the hub’s social media presence",
             "Create and schedule engaging content across platforms",
@@ -59,10 +58,8 @@ export default function CommunityDepartment() {
           ]
         }
       ];
-      
-      
   
-      const teamMembers = [
+    const teamMembers = [
         {
           name: "Person One",
           title: "Community Engagement Leader",
@@ -82,7 +79,6 @@ export default function CommunityDepartment() {
           bio: "Person Three captures and shares the stories, experiences, and achievements of our members. Through blogs, videos, and social media content, they bring the essence of Swahilipot Hub’s community to life.",
         }
       ];
-      
   
     return (
       <>
@@ -94,7 +90,7 @@ export default function CommunityDepartment() {
   
         <Stats stats={stats} />
   
-        <Roles responsibilities={roles} />
+        <Responsibilities responsibilities={responsibilities} />
   
         <Team members={teamMembers} />
       </>
