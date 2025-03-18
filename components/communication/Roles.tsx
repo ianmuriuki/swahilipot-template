@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface Role {
   title: string;
   description: string;
@@ -15,7 +13,7 @@ export default function Roles({ roles }: RolesProps) {
 
   return (
     <section className="py-16 bg-light dark:bg-gray-900">
-      <div className="container-custom mx-auto">
+      <div className="container-custom mx-auto px-6 md:px-12 lg:px-16 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold mb-4">The Communication Department Roles</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -23,26 +21,24 @@ export default function Roles({ roles }: RolesProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {roles.map((role, index) => (
             <div
               key={index}
-              className={`${bgClasses[index % 3]} dark:bg-gray-700 rounded-lg shadow-md overflow-hidden`}
+              className={`${bgClasses[index % 3]} dark:bg-gray-700 rounded-lg shadow-md p-6 mx-auto w-full max-w-[380px]`}
             >
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-3">{role.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{role.description}</p>
+              <h3 className="text-lg font-semibold mb-3">{role.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{role.description}</p>
 
-                <h6 className="font-medium mb-2">Roles:</h6>
-                <ul className="space-y-1 text-gray-600 dark:text-gray-300">
-                  {role.requirements.map((req, idx) => (
-                    <li key={idx} className="flex items-start text-sm">
-                      <span className="text-primary mr-2">•</span>
-                      <span>{req}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <h6 className="font-medium mb-2">Roles:</h6>
+              <ul className="space-y-1 text-gray-600 dark:text-gray-300">
+                {role.requirements.map((req, idx) => (
+                  <li key={idx} className="flex items-start text-sm">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{req}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

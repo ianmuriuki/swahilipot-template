@@ -8,7 +8,7 @@ export default function CommunicationsDepartment() {
     // Department data
     const departmentDescription = "The Communications Department at SwahiliPot Hub manages our messaging, media relations, and digital presence to share our story and impact with the world. Our team works to amplify the voices and achievements of our community, connect with stakeholders, and raise awareness about our programs and initiatives.";
   
-    const departmentImage = "/images/communicationsvg.png";
+    const departmentImage = "/images/about/image.png";
   
     const activities = [
       "Media Relations",
@@ -63,31 +63,25 @@ export default function CommunicationsDepartment() {
       {
         name: "Person one",
         title: "Communications Manager",
-        image: "/images/mtu.png",
+        image: "/images/blog/mtu.png",
         bio: "Person one leads our communications strategy, sharing SwahiliPot Hub's story and impact with the world. She has a background in digital marketing and content creation.",
-  
       },
       {
         name: "Person two",
         title: "Media Coordinator",
-        image: "/images/mtu.png",
+        image: "/images/blog/mtu.png",
         bio: "Person two manages media relations and coordinates SwahiliPot FM, our community radio station. He has experience in journalism and broadcasting.",
-  
       },
-  
       {
         name: "Person three",
         title: "Content Creator",
-        image: "/images/mtu.png",
+        image: "/images/blog/mtu.png",
         bio: "Person three creates engaging content for our website, social media, and publications. She is passionate about storytelling and visual communication.",
-  
       }
-  
     ];
   
     return (
       <>
-  
         <PageAbout
           description={departmentDescription}
           image={departmentImage}
@@ -101,4 +95,4 @@ export default function CommunicationsDepartment() {
         <Team members={teamMembers} />
       </>
     );
-  }
+}
