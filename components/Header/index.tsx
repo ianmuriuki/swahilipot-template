@@ -147,6 +147,7 @@ const Header = () => {
                               >
                                 {submenuItem.title}
                               </Link>
+                              {/* Display description if available */}
                               {submenuItem.description && (
                                 <p className="text-xs text-blue-500 dark:text-blue-500 mt-1">
                                   {submenuItem.description}
