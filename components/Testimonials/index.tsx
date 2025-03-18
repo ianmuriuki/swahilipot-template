@@ -7,7 +7,10 @@ const testimonialData: Testimonial[] = [
     id: 1,
     name: "Chris Achinga",
     designation: "Software Developer",
-    content:"SwahiliPot Hub has been instrumental in m tech journey.The mentorship and resources provided helped me launch m startup.",
+  
+    content:
+      "SwahiliPot Hub has been instrumental in my tech journey.The mentorship and resources provided helped me launch m startup.",
+
     image: "/images/testimonials/mtu1.jpeg",
     star: 5,
   },
@@ -23,10 +26,14 @@ const testimonialData: Testimonial[] = [
     id: 3,
     name: "Sanaipei Lenapunya",
     designation: "Software Developer",
-    content:"As a young woman in tech, the support I've recieved from, SwahiliPot Hub has been invaluable.Their programs are truly transfformative.",
-    image: "/images/testimonials/mtu...jpeg",
+
+    content:
+      "As a young woman in tech, the support I've recieved from, SwahiliPot Hub has been invaluable.Their programs are truly transfformative.",
+    image: "/images/testimonials/mtu1.jpeg",
+
     star: 5,
   },
+  
 ];
 
 const Testimonials = () => {
