@@ -9,23 +9,31 @@ const menuData: Menu[] = [
       {
         id: 21,
         title: "About Us",
-        path: "/about",
+        path: "/about/aboutUs",
         newTab: false,
         description: "Learn about our mission, vision, and impact."
       },
       {
         id: 22,
         title: "Origin",
-        path: "/origin",
+        path: "/about/origin",
         newTab: false,
         description: "Discover how SwahiliPot Hub began."
       },
       {
         id: 23,
         title: "Board Members",
-        path: "/board-members",
+        path: "/about/board-members",
         newTab: false,
         description: "Meet our board members."
+      },
+      {
+        id: 24,
+         title: "Work with us",
+         path: "/about/workwithus",
+         newTab: false,
+         description: "Work with us"
+
       },
     ],
   },
