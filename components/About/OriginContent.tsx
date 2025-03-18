@@ -1,5 +1,7 @@
 // components/About/origin/OriginContent.tsx
 
+import React from "react";
+
 const OriginContent = () => {
   return (
     <section className="py-16 bg-gray-100 dark:bg-gray-800">

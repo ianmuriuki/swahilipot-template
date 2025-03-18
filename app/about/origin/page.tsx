@@ -1,6 +1,5 @@
 // app/about/origin/page.tsx
 
-import OriginContent from "@/components/About/OriginContent";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -17,7 +16,7 @@ const OriginPage = () => {
         pageName="Origin"
         description="Discover the journey behind Swahilipot Hub and how it came to be."
       />
-      <OriginContent />
+    
     </>
   );
 };
