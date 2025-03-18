@@ -3,45 +3,45 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Visual Studio Code Setup: Unleash Your Coding Creativity",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+      "Visual Studio Code Setup: Unleash Your Coding Creativity.",
+    image: "/images/blog/code.png",
     author: {
-      name: "Samuyl Joshi",
-      image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      name: " Aron Wanje",
+      image: "/images/blog/mtu.png",
+      designation: "Technical supporter",
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["Technology"],
+    publishDate: "April 30th, 2024",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Swahili Tech Women(STW).",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
+      "How our Swahili Tech Women program is helping bridge the gender gap in technology fields.",
+    image: "/images/blog/womentech.jpg",
     author: {
-      name: "Musharof Chy",
-      image: "/images/blog/author-02.png",
+      name: "Rose Ndinda",
+      image: "/images/blog/mtu.png",
       designation: "Content Writer",
     },
-    tags: ["computer"],
-    publishDate: "2025",
+    tags: ["women in Tech"],
+    publishDate: "April 22nd, 2024",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Industrial Attachment Applications at Swahilipot Hub Foundation.",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "Industrial Attachment Applications at Swahilipot Hub Foundation.",
+    image: "/images/blog/attachee.png",
     author: {
-      name: "Lethium Deo",
-      image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      name: "Chris Achinga",
+      image: "/images/blog/mtu.png",
+      designation: "Software Developer",
     },
-    tags: ["design"],
-    publishDate: "2025",
+    tags: ["industrial attachment"],
+    publishDate: "April 4th,2024",
   },
 ];
 export default blogData;
