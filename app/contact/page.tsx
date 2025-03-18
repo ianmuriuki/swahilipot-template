@@ -14,8 +14,8 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Contact Us"
+        description="Get in touch with SwahiliPot Hub. We'd love to hear from you!."
       />
 
       <Contact />
