@@ -18,7 +18,7 @@ const menuData: Menu[] = [
         title: "Origin",
         path: "/origin",
         newTab: false,
-        description: "Discover how swahilipot Hub began."
+        description: "Discover how SwahiliPot Hub began."
       },
       {
         id: 23,
@@ -37,37 +37,37 @@ const menuData: Menu[] = [
       {
         id: 101,
         title: "Technology",
-        path: "/technology",
+        path: "/departments/technology",
         newTab: false,
         description: "Cutting-edge tech exploration and solutions."
       },
       {
         id: 102,
-        title: "Communication",
-        path: "/communication",
+        title: "Communications",
+        path: "/departments/communications",
         newTab: false,
         description: "Digital communication strategies."
       },
       {
         id: 103,
         title: "Engineering",
-        path: "/engineering",
+        path: "/departments/engineering",
         newTab: false,
-        description: "Softwares and hardware development."
+        description: "Software and hardware development."
       },
       {
         id: 104,
         title: "Community",
-        path: "/community",
+        path: "/departments/community",
         newTab: false,
         description: "Community engagement and outreach."
       },
       {
         id: 105,
         title: "Creatives",
-        path: "/creatives",
+        path: "/departments/creatives",
         newTab: false,
-        description: "Creaative art and design."
+        description: "Creative art and design."
       },
     ],
   },
@@ -140,7 +140,7 @@ const menuData: Menu[] = [
   },
   {
     id: 200,
-    title: "Swahilipotfm",
+    title: "SwahiliPot FM",
     path: "/swahilipotfm",
     newTab: false,
   },
