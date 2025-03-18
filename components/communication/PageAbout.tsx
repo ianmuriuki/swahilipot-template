@@ -34,7 +34,7 @@ const PageAbout: React.FC<PageAboutProps> = ({ description, image, activities })
             {/* Text Section */}
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="About Our Communication Department"
+                title="Communication Department"
                 paragraph={description}
                 mb="44px"
               />

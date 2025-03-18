@@ -39,7 +39,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
                   <Image src={author.image} alt="author" fill />
                 </div>
-              </div>
+      ll        </div>
               <div className="w-full">
                 <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
                   By {author.name}
