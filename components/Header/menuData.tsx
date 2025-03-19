@@ -18,22 +18,21 @@ const menuData: Menu[] = [
         title: "Origin",
         path: "/about/origin",
         newTab: false,
-        description: "Discover how SwahiliPot Hub began."
+        description: "Discover how Swahilipot Hub began."
       },
       {
         id: 23,
         title: "Board Members",
-        path: "/about/board-members",
+        path: "/about/board", // Updated path to match the directory structure
         newTab: false,
         description: "Meet our board members."
       },
       {
         id: 24,
-         title: "Work with us",
-         path: "/about/workwithus",
-         newTab: false,
-         description: "Work with us"
-
+        title: "Work with us",
+        path: "/about/workwithus",
+        newTab: false,
+        description: "Work with us"
       },
     ],
   },

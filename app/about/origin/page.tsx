@@ -1,4 +1,4 @@
-// app/about/origin/page.tsx
+
 
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
