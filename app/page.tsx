@@ -9,9 +9,10 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
-import Numbers  from "@/components/landing/Numbers/Page";
+import Numbers from "@/components/landing/Numbers/Page";
 import Swahilipotfm from "@/components/landing/Swahiliotfm/Page";
 import { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   title: "Swahilipot Hub Foundation",
@@ -70,7 +71,8 @@ export default function Home() {
       <Numbers/>
       <Swahilipotfm/>
       <Blog />
-      <Contact/>
+      
+      <Contact />
     </>
   );
 }
