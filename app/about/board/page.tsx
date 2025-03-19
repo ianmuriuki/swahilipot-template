@@ -1,5 +1,5 @@
 import React from 'react';
-import BoardMembers from '@/components/about/board/BoardMembers';
+import BoardMembers from '@/components/About/board/BoardMembers';
 import Breadcrumb from '@/components/Common/Breadcrumb';
 
 export default function BoardMembersPage() {
