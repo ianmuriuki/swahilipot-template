@@ -8,28 +8,28 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 21,
-        title: "about",
+        title: "ABOUT US",
         path: "/about",
         newTab: false,
         description: "Learn about our mission, vision, and impact."
       },
       {
         id: 22,
-        title: "Origin",
+        title: "OUR ORIGIN",
         path: "/about/origin",
         newTab: false,
         description: "Discover how Swahilipot Hub began."
       },
       {
         id: 23,
-        title: "Board Members",
+        title: "BOARD MEMBERS",
         path: "/about/board", // Updated path to match the directory structure
         newTab: false,
         description: "Meet our board members."
       },
       {
         id: 24,
-        title: "Work with us",
+        title: "WORK WITH US",
         path: "/about/workwithus",
         newTab: false,
         description: "Work with us"
@@ -43,35 +43,35 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 101,
-        title: "Technology",
+        title: "TECHNOLOGY",
         path: "/departments/technology",
         newTab: false,
         description: "Cutting-edge tech exploration and solutions."
       },
       {
         id: 102,
-        title: "Communications",
+        title: "COMMUNICATION",
         path: "/departments/communications",
         newTab: false,
         description: "Digital communication strategies."
       },
       {
         id: 103,
-        title: "Engineering",
+        title: "ENGINEERING",
         path: "/departments/engineering",
         newTab: false,
         description: "Software and hardware development."
       },
       {
         id: 104,
-        title: "Community",
+        title: "COMMUNITY",
         path: "/departments/community",
         newTab: false,
         description: "Community engagement and outreach."
       },
       {
         id: 105,
-        title: "Creatives",
+        title: "CREATIVES",
         path: "/departments/creatives",
         newTab: false,
         description: "Creative art and design."

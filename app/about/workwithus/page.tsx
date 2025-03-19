@@ -83,8 +83,8 @@ export default function WorkWithUsPage() {
         <div className="container-custom mx-auto px-6">
           {/* Breadcrumb */}
           <Breadcrumb 
-            pageName="About Us" 
-            description="Learn about our mission, vision, and impact" 
+            pageName="Work with Us" 
+            description="Join our community and explore our opportunities." 
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
