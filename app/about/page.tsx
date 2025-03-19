@@ -1,6 +1,6 @@
-import Mission from "@/components/About/Mission";
-import Vision from "@/components/About/Vission";
-import Gallery from "@/components/About/Gallery";
+import Mission from "@/components/about/Mission";
+import Vision from "@/components/about/Vission";
+import Gallery from "@/components/about/Gallery";
 
 // Metadata (Optional)
 export const metadata = {
