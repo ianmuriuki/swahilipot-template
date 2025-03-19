@@ -8,8 +8,8 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 21,
-        title: "About Us",
-        path: "/about/aboutUs",
+        title: "about",
+        path: "/about",
         newTab: false,
         description: "Learn about our mission, vision, and impact."
       },

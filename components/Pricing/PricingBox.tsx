@@ -2,7 +2,26 @@
 import { useState } from "react";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
-import PricingBox from "./PricingBox";  // Make sure you import the PricingBox component.
+
+const AttachmentCard = ({ packageName, duration, subtitle, children }) => {
+  return (
+    <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div className="text-4xl text-primary mb-4">🎓</div>
+      <h3 className="text-2xl font-semibold mb-4">{packageName}</h3>
+      <p className="text-gray-700 dark:text-gray-300 mb-6">{subtitle}</p>
+      <ul className="space-y-3 mb-6">
+        <li className="flex items-start">
+          <span className="text-primary mr-2">•</span>
+          <span>Duration: {duration}</span>
+        </li>
+        {children}
+      </ul>
+      <Link href="/about/work-with-us" className="text-primary font-medium hover:underline">
+        Apply Now →
+      </Link>
+    </div>
+  );
+};
 
 const Attachment = () => {
   return (
@@ -15,63 +34,50 @@ const Attachment = () => {
           width="665px"
         />
 
-        {/* Attachment and Internship Opportunities as PricingBox */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-2">
           {/* Student Attachments */}
-          <PricingBox
+          <AttachmentCard
             packageName="Student Attachments"
-            price="0"  // For symbolic price, you can change it to something like "free" or leave it as 0
             duration="3-4 months"
             subtitle="We offer attachment opportunities for students looking to fulfill their academic requirements while gaining practical experience in various fields including technology, arts, communications, and community development."
           >
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Flexible duration (3-4 months)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Hands-on project experience</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Mentorship from professionals</span>
-              </li>
-            </ul>
-            <Link href="/about/work-with-us" className="text-primary font-medium hover:underline">
-              Apply for Attachment →
-            </Link>
-          </PricingBox>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>Flexible duration (3-4 months)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>Hands-on project experience</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>Mentorship from professionals</span>
+            </li>
+          </AttachmentCard>
 
           {/* Professional Internships */}
-          <PricingBox
+          <AttachmentCard
             packageName="Professional Internships"
-            price="0"  // For symbolic price, change this to something like "free" or leave as 0
             duration="3-12 months"
             subtitle="Our internship program is designed for recent graduates and young professionals seeking to build their careers in innovation, technology, creative arts, and community development."
           >
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>3-12 month structured programs</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Leadership development opportunities</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Networking with industry professionals</span>
-              </li>
-            </ul>
-            <Link href="/about/work-with-us" className="text-primary font-medium hover:underline">
-              Apply for Internship →
-            </Link>
-          </PricingBox>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>3-12 month structured programs</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>Leadership development opportunities</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">•</span>
+              <span>Networking with industry professionals</span>
+            </li>
+          </AttachmentCard>
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
             Both our attachment and internship programs provide valuable experience, skills development, and networking opportunities to help launch your career.
           </p>
           <Link href="/about/work-with-us" className="btn">
@@ -139,4 +145,5 @@ const Attachment = () => {
 };
 
 export default Attachment;
+
 

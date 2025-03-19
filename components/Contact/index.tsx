@@ -93,6 +93,31 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+
+{/* Map Section */}
+<section className="py-10 bg-gray-100 dark:bg-gray-800 flex flex-col items-center">
+  {/* Heading Outside */}
+  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-5">
+    Find Us
+  </h2>
+
+  {/* Map Container */}
+  <div className="w-[60%] h-[500px] rounded-lg overflow-hidden shadow-lg border border-gray-300 dark:border-gray-700">
+    <iframe
+      title="Google Map Location"
+      className="w-full h-full"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.789356977319!2d39.67731441020607!3d-4.063311395893389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1840131ba0153b67%3A0x75a36ee817c3f38b!2sSwahilipot%20Hub!5e0!3m2!1sen!2ske!4v1741008927276!5m2!1sen!2ske"
+      style={{ border: "0" }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+
+
     </>
   );
 };
