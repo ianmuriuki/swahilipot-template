@@ -1,6 +1,6 @@
 import React from 'react';
-import InnerNav from '@/components/about/workwithus/InnerNav';
 import RoleDescription from '@/components/about/workwithus/RoleDescription';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 export default function WorkWithUsPage() {
   const roles = [
@@ -79,39 +79,98 @@ export default function WorkWithUsPage() {
 
   return (
     <>
-      <InnerNav />
+      <section className="py-16 bg-orange-50 dark:bg-gray-900">
+        <div className="container-custom mx-auto px-6">
+          {/* Breadcrumb */}
+          <Breadcrumb 
+            pageName="About Us" 
+            description="Learn about our mission, vision, and impact" 
+          />
 
-      <section className="py-16 bg-orange-50 dark:bg-gray-800">
-        <div className="container-custom mx-auto">
-          <div className="max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Current Opportunities</h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 text-center">
-              Join our team and be part of our mission to empower youth through technology, arts, and culture.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {roles.map((role, index) => (
+              <div
+                className="w-full wow fadeInUp shadow-lg dark:bg-gray-800 dark:shadow-xl dark:hover:shadow-2xl relative z-10 rounded-xl bg-white px-6 py-8 hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-105"
+                key={index}
+                data-wow-delay=".1s"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-3xl font-bold text-black dark:text-white">{role.title}</h3>
+                </div>
+                <h4 className="mb-2 text-xl font-bold text-dark dark:text-white">{role.department}</h4>
+                <p className="mb-4 text-base text-body-color">{role.location} | {role.type}</p>
+                <p className="mb-7 text-base text-body-color">{role.description}</p>
 
-          {roles.map((role, index) => (
-            <RoleDescription
-              key={index}
-              title={role.title}
-              department={role.department}
-              location={role.location}
-              type={role.type}
-              description={role.description}
-              responsibilities={role.responsibilities}
-              qualifications={role.qualifications}
-              applicationLink={role.applicationLink}
-            />
-          ))}
+                <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
+                  <button className="flex w-full items-center justify-center rounded-lg bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-lg">
+                    Apply Now
+                  </button>
+                </div>
 
-          <div className="bg-blue-50 dark:bg-gray-700 p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Don't see a role that fits?</h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              We're always looking for talented individuals who are passionate about our mission. If you don't see a role that matches your skills but believe you can contribute to SwahiliPot Hub, we'd love to hear from you.
-            </p>
-            <a href="/contact" className="btn bg-primary text-white hover:bg-primary-dark">
-              Contact Us
-            </a>
+                <div>
+                  <h5 className="text-lg font-semibold text-gray-900 dark:text-white">Responsibilities:</h5>
+                  <ul className="list-disc pl-5 text-base text-body-color">
+                    {role.responsibilities.map((task, idx) => (
+                      <li key={idx}>{task}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-4">
+                  <h5 className="text-lg font-semibold text-gray-900 dark:text-white">Qualifications:</h5>
+                  <ul className="list-disc pl-5 text-base text-body-color">
+                    {role.qualifications.map((qual, idx) => (
+                      <li key={idx}>{qual}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="absolute bottom-0 right-0 z-[-1]">
+                  <svg
+                    width="179"
+                    height="158"
+                    viewBox="0 0 179 158"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z"
+                      fill="url(#paint0_linear_70:153)"
+                    />
+                    <path
+                      opacity="0.3"
+                      d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z"
+                      fill="url(#paint1_linear_70:153)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_70:153"
+                        x1="69.6694"
+                        y1="29.9033"
+                        x2="196.108"
+                        y2="83.2919"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                        <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_70:153"
+                        x1="165.348"
+                        y1="-75.4466"
+                        x2="-3.75136"
+                        y2="103.645"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#4A6CF7" stopOpacity="0.62" />
+                        <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
