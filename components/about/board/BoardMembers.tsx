@@ -1,5 +1,5 @@
 import React from "react";
-import TeamCard from './TeamCard';
+import TeamCard from "./TeamCard";
 import SectionTitle from "../../Common/SectionTitle";
 
 const BoardMembers: React.FC = () => {

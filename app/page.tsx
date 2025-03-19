@@ -9,6 +9,8 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
+import Numbers  from "@/components/landing/Numbers/Page";
+import Swahilipotfm from "@/components/landing/Swahiliotfm/Page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -65,8 +67,10 @@ export default function Home() {
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
+      <Numbers/>
+      <Swahilipotfm/>
       <Blog />
-      <Contact />
+      <Contact/>
     </>
   );
 }
