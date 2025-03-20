@@ -39,7 +39,7 @@ const Attachment = () => {
                   <span>Mentorship from professionals</span>
                 </li>
               </ul>
-              <Link href="/about/work-with-us" className="text-primary font-medium hover:underline">
+              <Link href="/about/workwithus" className="text-primary font-medium hover:underline">
                 Apply for Attachment →
               </Link>
             </div>
@@ -64,7 +64,7 @@ const Attachment = () => {
                   <span>Networking with industry professionals</span>
                 </li>
               </ul>
-              <Link href="/about/work-with-us" className="text-primary font-medium hover:underline">
+              <Link href="/about/workwithus" className="text-primary font-medium hover:underline">
                 Apply for Internship →
               </Link>
             </div>
@@ -74,7 +74,7 @@ const Attachment = () => {
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
               Both our attachment and internship programs provide valuable experience, skills development, and networking opportunities to help launch your career.
             </p>
-            <Link href="/about/work-with-us" className="btn">
+            <Link href="/about/workwithus" className="btn">
               View All Opportunities
             </Link>
           </div>

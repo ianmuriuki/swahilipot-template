@@ -64,7 +64,7 @@ const Header = () => {
                 className="w-full dark:hidden"
               />
               <Image
-                src="/images/logo/logo-dark.png" // Ensure a dark mode version exists
+                src="/images/logo/logo.png" // Ensure a dark mode version exists
                 alt="logo"
                 width={150}
                 height={40}
