@@ -3,6 +3,7 @@ import PageAbout from '@/components/community/PageAbout';
 import Stats from '@/components/community/Stats';
 import Responsibilities from '@/components/community/Responsibilities';
 import Team from '@/components/community/Team';
+import Breadcrumb from '@/components/Common/Breadcrumb';  // Import the breadcrumb component
 
 export default function CommunityDepartment() {
     // Department data
@@ -58,7 +59,7 @@ export default function CommunityDepartment() {
           ]
         }
       ];
-  
+
     const teamMembers = [
         {
           name: "Person One",
@@ -79,9 +80,15 @@ export default function CommunityDepartment() {
           bio: "Person Three captures and shares the stories, experiences, and achievements of our members. Through blogs, videos, and social media content, they bring the essence of Swahilipot Hub’s community to life.",
         }
       ];
-  
+
     return (
       <>
+        {/* Add the breadcrumb component here */}
+        <Breadcrumb 
+          pageName="Community Department" 
+          description="Learn more about the Community Department, its activities, responsibilities, and the talented team working to build a strong, inclusive community at Swahilipot Hub." 
+        />
+  
         <PageAbout
           description={communityDescription}
           image={communityImage}

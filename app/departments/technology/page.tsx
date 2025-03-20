@@ -3,6 +3,7 @@ import PageAbout from '@/components/technology/PageAbout';
 import Stats from '@/components/technology/Stats';
 import Roles from '@/components/technology/Roles';
 import Team from '@/components/technology/Team';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 export const metadata = {
   title: "Technology Department - SwahiliPot Hub",
@@ -72,6 +73,12 @@ export default function TechnologyDepartment() {
 
   return (
     <>
+      {/* Add the breadcrumb here */}
+      <Breadcrumb 
+        pageName="Technology Department" 
+        description="Learn more about the technology department, its initiatives, and the amazing team behind it." 
+      />
+
       <PageAbout 
         description={departmentDescription}
         image={departmentImage}

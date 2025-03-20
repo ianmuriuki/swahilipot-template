@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import Link from "next/link";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -30,19 +31,23 @@ Through this program, we offer mentorship, counseling, skills development, and a
               >
                 <Image
                   src="/images/about/casemanagement.png"
-                  alt="casemanagemnt-image"
-                   fill
-                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <Image
-                  src="/images/about/casemanagement.png"
                   alt="casemanagement-image"
                   fill
-                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Learn More Button directly below the content */}
+        <div className="mt-8 text-center">
+          <Link
+            href="/case-management"
+            className="inline-block bg-primary text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-opacity-90 transition"
+          >
+            Learn More About Case Management
+          </Link>
         </div>
       </div>
     </section>

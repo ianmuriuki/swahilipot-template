@@ -3,12 +3,13 @@ import PageAbout from '@/components/engineering/PageAbout';
 import Stats from '@/components/engineering/Stats';
 import Roles from '@/components/engineering/Roles';
 import Team from '@/components/engineering/Team';
+import Breadcrumb from '@/components/Common/Breadcrumb';  // Import the breadcrumb component
 
 export default function EngineeringDepartment() {
   // Department data
   const departmentDescription = "We are the Engineering Team under the Technology Department at Swahilipot Hub Foundation, dedicated to developing and maintaining the organization's platforms as well as manage and configure the network infrastructure.";
   
-  const departmentImage = "/images/departments/department.png";
+  const departmentImage = "/images/about/dep_tech.svg";
   
   const activities = [
     "Software Development",
@@ -28,9 +29,9 @@ export default function EngineeringDepartment() {
   const roles = [
     {
       title: "Role of the team",
-      description: "The Engineering team is incharge of the following roles:",
+      description: "The Engineering team is in charge of the following roles:",
       requirements: [
-        "The team is crucial to the organisation, leading software, web and digital, product development and innovation.",
+        "The team is crucial to the organisation, leading software, web, and digital product development and innovation.",
         "We design and create technologies that meet the organisation's needs.",
         "Continuously optimizing solutions, they enhance product performance, ensuring competitiveness."
       ]
@@ -49,12 +50,12 @@ export default function EngineeringDepartment() {
     },
     {
       title: "Impact of the team in the organization",
-      description: "The team has the following impacts to the Swahilipot Hub Organization.",
+      description: "The team has the following impacts on the Swahilipot Hub Organization.",
       requirements: [
-        "The team intergrates and manages platforms for various activities within the organization.",
+        "The team integrates and manages platforms for various activities within the organization.",
         "Our efforts have streamlined processes and enhanced efficiency across departments",
         "The team has fostered strong collaboration with other departments such as creatives and communications, synergizing efforts to achieve common goals and objectives.",
-        "Together, our contributions have significantly impacted the hub's operations and success"
+        "Together, our contributions have significantly impacted the hub's operations and success."
       ]
     }
   ];
@@ -108,7 +109,7 @@ export default function EngineeringDepartment() {
       name: "Aaron Wanje",
       title: "Technical Support",
       image: "/images/departments/aronimage.png",
-      bio: "Ensures smooth operations and rapid troubleshooting incharge of Digital Literacy classes.",
+      bio: "Ensures smooth operations and rapid troubleshooting in charge of Digital Literacy classes.",
       social: {
         linkedin: "https://linkedin.com/in/michaelodhiambo",
         github: "https://github.com/michaelodhiambo",
@@ -131,10 +132,11 @@ export default function EngineeringDepartment() {
 
   return (
     <>
-      {/* <PageHero 
-        title="Engineering Department" 
-        subtitle="Building innovative technical solutions to address local challenges and support our community."
-      /> */}
+      {/* Add the breadcrumb component here */}
+      <Breadcrumb 
+        pageName="Engineering Department" 
+        description="Learn more about the Engineering Department, its activities, roles, team members, and contributions to Swahilipot Hub."
+      />
       
       <PageAbout 
         description={departmentDescription}
@@ -150,12 +152,3 @@ export default function EngineeringDepartment() {
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   return {
-//     props: {
-//       title: "Engineering Department - SwahiliPot Hub",
-//       description: "The Engineering Department at SwahiliPot Hub develops technical solutions and infrastructure to support our initiatives and the wider community."
-//     }
-//   };
-// }

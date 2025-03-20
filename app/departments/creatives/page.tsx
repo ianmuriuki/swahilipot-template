@@ -1,13 +1,13 @@
 import React from 'react';
-
 import PageAbout from '@/components/Creatives/PageAbout';
 import Stats from '@/components/Creatives/Stats';
 import Roles from '@/components/Creatives/Role';
 import Team from '@/components/Creatives/Team';
+import Breadcrumb from '@/components/Common/Breadcrumb';  // Import the breadcrumb component
 
 export default function CreativesDepartment() {
   // Department details
-  const departmentDescription = "Welcome to the Creative Department, where imagination meets action and ideas come to life! We're not your average department; in fact, we like to think of ourselves as the heartbeat of the hub. We're the ones who bring color, vibrancy, and a touch of magic to everything we do. Get ready to embark on a journey where innovation meets excitement, where ideas take flight, and where the possibilities are limitless. ";
+  const departmentDescription = "Welcome to the Creative Department, where imagination meets action and ideas come to life! We're not your average department; in fact, we like to think of ourselves as the heartbeat of the hub. We're the ones who bring color, vibrancy, and a touch of magic to everything we do. Get ready to embark on a journey where innovation meets excitement, where ideas take flight, and where the possibilities are limitless.";
   
   const departmentImage = "/images/culture.png";
   
@@ -51,27 +51,28 @@ export default function CreativesDepartment() {
       title: "Arts & Culture Manager",
       image: "/images/blog/mtu.png",
       bio: "Person one brings her extensive background in arts to develop and manage our creative programs and cultural initiatives. She is dedicated to preserving and promoting local cultural heritage.",
-     
     },
     {
       name: "Person two",
       title: "Visual Arts Coordinator",
       image: "/images/blog/mtu.png",
       bio: "Person two manages our visual arts programs, exhibitions, and workshops. He is passionate about providing platforms for artists to showcase their work and develop their skills.",
-     
     },
     {
       name: "Person Three",
       title: "Performing Arts Coordinator",
       image: "/images/blog/mtu.png",
       bio: "Person three coordinates our music, dance, theater, and other performing arts programs. She believes in the power of performance to preserve culture and create social change.",
-    
     }
   ];
 
   return (
     <>
-     
+      {/* Add the breadcrumb component here */}
+      <Breadcrumb 
+        pageName="Creatives Department" 
+        description="Explore the Creatives Department, where we celebrate and promote arts and culture through various programs, exhibitions, and performances."
+      />
       
       <PageAbout 
         description={departmentDescription}
@@ -87,13 +88,3 @@ export default function CreativesDepartment() {
     </>
   );
 }
-
-// // Static Props for SEO
-// export async function getStaticProps() {
-//   return {
-//     props: {
-//       title: "Creatives Department - SwahiliPot Hub",
-//       description: "The Creatives Department at SwahiliPot Hub celebrates and promotes arts and culture through various programs, exhibitions, and performances."
-//     }
-//   };
-// }

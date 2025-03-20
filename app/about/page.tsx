@@ -17,7 +17,7 @@ export default function AboutPage() {
         <Breadcrumb 
           pageName="About Us" 
           description="Learn about our mission, vision, and impact" 
-        />ta
+        />
         <Mission />
         <Vision />
       </div>
