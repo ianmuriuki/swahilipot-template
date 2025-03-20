@@ -36,7 +36,7 @@ const Header = () => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
-  const usePathName = usePathname();
+  const pathname = usePathname();
 
   return (
     <header
@@ -48,6 +48,7 @@ const Header = () => {
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
+          {/* Logo */}
           <div className="w-60 max-w-full px-4 xl:mr-12">
             <Link
               href="/"
@@ -63,7 +64,7 @@ const Header = () => {
                 className="w-full dark:hidden"
               />
               <Image
-                src="/images/logo/logo.png"
+                src="/images/logo/logo-dark.png" // Ensure a dark mode version exists
                 alt="logo"
                 width={150}
                 height={40}
@@ -71,6 +72,8 @@ const Header = () => {
               />
             </Link>
           </div>
+
+          {/* Navbar & Theme Toggle */}
           <div className="flex w-full items-center justify-between px-4">
             <button
               onClick={navbarToggleHandler}
@@ -94,6 +97,7 @@ const Header = () => {
                 }`}
               />
             </button>
+
             <nav
               id="navbarCollapse"
               className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
@@ -109,7 +113,7 @@ const Header = () => {
                       <Link
                         href={menuItem.path}
                         className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                          usePathName === menuItem.path
+                          pathname === menuItem.path
                             ? "text-primary dark:text-white"
                             : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                         }`}
@@ -147,12 +151,6 @@ const Header = () => {
                               >
                                 {submenuItem.title}
                               </Link>
-                              {/* Display description if available */}
-                              {submenuItem.description && (
-                                <p className="text-xs text-blue-500 dark:text-blue-500 mt-1">
-                                  {submenuItem.description}
-                                </p>
-                              )}
                             </div>
                           ))}
                         </div>
@@ -162,7 +160,11 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
-     
+
+            {/* Theme Toggler */}
+            <div className="ml-4">
+              <ThemeToggler />
+            </div>
           </div>
         </div>
       </div>
