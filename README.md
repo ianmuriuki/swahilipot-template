@@ -1,46 +1,98 @@
-# Startup - Free Next.js Startup Website Template
+# Swahilipot Website template
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+## 🌍 About Swahilipot
+Swahilipot is a dynamic and interactive platform designed to foster creativity, innovation, and technological advancement. It serves as a hub for developers, creatives, and entrepreneurs, providing them with access to resources, mentorship, and a collaborative space to work on their projects.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## 🚀 Features
+### 🌟 General Features
+- **Modern UI/UX** – Designed with a sleek and intuitive user experience.
+- **Fully Responsive** – Works seamlessly on desktops, tablets, and mobile devices.
+- **Dark Mode & Light Mode** – Toggle between themes for better accessibility.
+- **Multi-Language Support** – Supports multiple languages for inclusivity.
+- **Real-time Updates** – Dynamic content updates without requiring a page refresh.
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js 13 and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+### 🔍 Core Functionalities
+- **User Authentication** – Secure login and signup using OAuth, JWT, or Internet Identity.
+- **Community Forum** – Engage with other users through discussion threads and Q&A sections.
+- **Event Management System** – Stay updated with upcoming tech events and workshops.
+- **Resource Hub** – Access free educational materials, tutorials, and documentation.
+- **Job Board** – Connect with potential employers and job opportunities in the tech space.
+- **Mentorship Program** – Connect with mentors for guidance and career development.
+- **Project Showcase** – Allow users to display their projects and get feedback.
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+### 🛠️ Developer & Tech Features
+- **API Integration** – Seamless integration with third-party services and APIs.
+- **Content Management System (CMS)** – Manage content dynamically using Strapi CMS.
+- **SEO Optimization** – Enhanced SEO for better search engine rankings.
+- **Progressive Web App (PWA)** – Works as a mobile-friendly web app with offline capabilities.
+- **Newsletter Subscription** – Users can subscribe for updates and newsletters.
 
-[![Startup Pro](https://cdn.nextjstemplates.com/Startup-Pro---Next.js-Starter-Template-for-SaaS-Startups-282e26f7-f543-4ae4-a777-ac306c08cce8.png)](https://nextjstemplates.com/templates/saas-starter-startup)
+## 💻 Tech Stack
+- **Frontend:** React (Next.js, TypeScript, TailwindCSS)
+- **Authentication:** 
+- **Deployment:** Vercel (Frontend)
+- **Version Control:** Git & GitHub (Monorepo structure)
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+## 🏗️ Installation & Setup
+### Prerequisites
+Ensure you have the following installed on your system:
+- Node.js (v18+)
+- Next.js 15
+- React
+- npm or yarn
+- Git
+
+### 📥 Clone the Repository
+```sh
+git clone https://github.com/ianmuriuki/swahilipot-template.git
+cd swahilipot-template
+```
+
+### 🔧 Install Dependencies
+```sh
+npm install  # or yarn install
+```
+
+### ⚙️ Environment Variables
+Create a `.env.local` file in the root directory and add the required environment variables.
+Example:
+```
+NEXT_PUBLIC_API_URL=https://api.swahilipot.com
+DATABASE_URL=postgres://user:password@localhost:5432/swahilipot
+JWT_SECRET=your_secret_key
+```
+
+### 🏃‍♂️ Running the Project
 
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+#### 2️⃣ Start the Frontend (Next.js)
+```sh
+cd frontend
+npm run dev
+```
+Access the application at `http://localhost:3000`
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+## 🎮 Usage Guide
+- **Sign Up / Login** – Register as a user or log in using OAuth providers.
+- **Explore the Forum** – Interact with other users in discussions.
+- **Join Events** – Browse and register for upcoming tech events.
+- **Submit a Project** – Share your project with the community.
+- **Apply for Jobs** – Browse and apply for job opportunities.
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+## 🤝 Contributing
+We welcome contributions from the community! Follow these steps:
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** locally.
+3. **Create a new branch** for your changes.
+4. **Make your modifications** and commit the changes.
+5. **Push your branch** to your fork and create a pull request.
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## 📜 License
+This project is licensed under the MIT License.
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+## 📞 Contact & Support
+For support, reach out via:
+- Email: ianmuriuki.inc@gmail.com
+- GitHub Issues: [Open an Issue](https://github.com/ianmuriuki/swahilipot-template/issues)
+  
 
-### ⚡ Deploy Now
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
-
-
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
