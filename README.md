@@ -21,8 +21,6 @@ Swahilipot is a dynamic and interactive platform designed to foster creativity, 
 - **Project Showcase** – Allow users to display their projects and get feedback.
 
 ### 🛠️ Developer & Tech Features
-- **API Integration** – Seamless integration with third-party services and APIs.
-- **Content Management System (CMS)** – Manage content dynamically using Strapi CMS.
 - **SEO Optimization** – Enhanced SEO for better search engine rankings.
 - **Progressive Web App (PWA)** – Works as a mobile-friendly web app with offline capabilities.
 - **Newsletter Subscription** – Users can subscribe for updates and newsletters.
